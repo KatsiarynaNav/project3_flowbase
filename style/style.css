@@ -752,6 +752,10 @@ background: #F2F2F2;
 .malto_house{
     width: 48%;
 }
+.section__listings .list .str hr{
+    margin-top: 20px;
+}
+
 .section__listings .list .choose{
     margin-bottom: 20px;
 }
