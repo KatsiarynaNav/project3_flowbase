@@ -266,10 +266,10 @@ box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.1337);
     border-left: solid 1px #E4E4E4 ;
     border-right: solid 1px #E4E4E4 ;
 }
-.malto_house .wrap__title h2{
+.malto_house .wrap__title h3{
     font-weight: 700;
     font-style: normal;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 34.5px;
     letter-spacing: -0.6px;
     color: rgba(0, 0, 0, 1); 
