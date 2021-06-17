@@ -178,6 +178,7 @@ margin-left: 19px;
     height: auto;
     background-color: #f5f5f5;
     padding-bottom: 202px;
+    padding-top: 5px;
 }
 .section__listings .list .str hr{
     width: 169px;
@@ -222,6 +223,12 @@ margin-top: 45px;
     border-right: rgba(228, 228, 228, 1) solid 1px;
     text-align: center;
 }
+.big_button .var:nth-child(4) {
+border-right: none;
+
+
+}
+
 .big_button  img{
     padding-left: 6px;
 }
@@ -310,14 +317,12 @@ box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.1337);
  
  .company__work-left{
      width: 50%;
-     margin-left: 10%;
-     margin-right: 5%;
      position: relative;
      top: 200px;
       }
       .company__work-right{
           width: 50%;
-          margin-right: 75px;
+         
       }  
       .company__work-left .sub__container hr{
     width: 169px;
@@ -346,6 +351,11 @@ box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.1337);
    margin-bottom: 170px;
 
   }
+.sub__container{
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
 
 /* Section callout */
 
@@ -423,6 +433,7 @@ padding-bottom: 150px;
     .opinion .content-inner{
         display: grid;
         grid-template-columns: repeat(3,1fr);
+        grid-column-gap:30px ;
            }
 
 
@@ -435,7 +446,6 @@ padding-bottom: 150px;
         color: rgba(0, 0, 0, 1);
         text-decoration: none;
         margin-bottom: 60px;
-        width: 336px;
         text-align: left;
         
     }
@@ -469,32 +479,57 @@ padding-bottom: 150px;
         letter-spacing: -0.38px;
         color: rgba(151, 151, 151, 1);
             }
-    .content-inner .comment p span{
+
+
+
+    .content-inner .comment p.info-descr{
         font-weight: 400;
         font-size: 15px;
         font-style: normal;
         line-height: 19px;
         letter-spacing: -0.38px;
-        color: rgba(151, 151, 151, 1);   
+        color: rgba(151, 151, 151, 1); 
+        display: inline-block;
+        position: relative;
+        left:-98px;
+        top: -10px;  
     } 
     .content-inner .comment hr {
-        width: 336px;
+        width: 100%;
         height: 4px;
         border-radius: 2px;
         background: linear-gradient(90deg, #FFAC12 0%, #000000 94.96%);
+        margin: 0;
+        margin-bottom: 40px;
         }
         .content-inner .comment{
             text-align: center;
+            overflow: hidden;
         }
-
-
-    .info-comment {
-        width: 336px;
-        height: 141px;
+        .content-inner .comment:first-child hr,.content-inner .comment:last-child hr{
+            background: #ffffff;
+            border: 0;
+        }
+        .content-inner .comment:first-child:hover hr,.content-inner .comment:last-child:hover hr {
+            background: linear-gradient(90deg, #FFAC12 0%, #000000 94.96%);
+        }
+        .info-comment{
+            padding-top: 46px;
+            padding-bottom: 46px;
+            text-align: left;
+            padding-left: 40px;  
+        }
+    
+        .info-comment1 {
+        width: 100%;
         background:rgba(0, 0, 0, 1);
-        
+        padding-top: 46px;
+        padding-bottom: 46px;
+        text-align: left;
+        padding-left: 40px;
     }
- .content-inner .comment:first-child .like,.content-inner .comment:last-child .like{
+ 
+    .content-inner .comment:first-child .like,.content-inner .comment:last-child .like{
     color: #ffffff;
 }
 .content-inner .comment:first-child:hover .like,.content-inner .comment:last-child:hover .like{
@@ -595,8 +630,79 @@ letter-spacing: -0.38px;
 .house__info{
     background: linear-gradient(225.52deg, #271A00 0.45%, rgba(0, 0, 0, 0.982162) 100.47%);
 }
+.house__info hr{
+    height: 1px;
+    display: block;
+    width: 100%;
+    opacity: 0.1;
+    background: #ffffff;
+    margin: 0;
+    margin-top: 32px;
+    margin-bottom: 21px;
+}
+.wrap__title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 22px;
+}
+.wrap__title-left h1, .wrap__title-right .price{
+font-size: 32px;
+line-height: 42px;
+letter-spacing: -0.8px;
+font-weight: bold;
+color: #ffffff;
 
+}
+.wrap__title-left p, .wrap__title-right .price__ft{
+font-size: 15px;
+line-height: 24px;
+font-weight: 400;
+letter-spacing: -0.38 px;
+opacity: 0.6;
+color: #ffffff;
+}
+.wrap__title-right{
+    text-align: right;
+}
 
+/* Section house slider */
+
+.house__slider{
+background: #F2F2F2;
+
+}
+.house__gallery{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 23px;
+
+}
+.house__gallery-left img{
+    max-width: 100%;
+    border-radius: 0 57px 0 0;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.house__gallery-right{
+    background: rgba(255, 255, 255, 1);
+    border-radius: 25px;
+    box-shadow: 0px, 32px
+    rgba(0, 0, 0, 0.1337);
+}
+.house__gallery-right input, .house__gallery-right textarea{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(235, 235, 235, 1) ;
+    margin: 5px 0;
+
+}
+.house__gallery-right .feedback{
+    padding: 0 20px;
+}
+.house__gallery-right input{
+    height: 60px;
+
+}
 
 
 /* MEDIA */
@@ -665,6 +771,7 @@ letter-spacing: -0.38px;
 .company__work-right img{
     box-shadow: 0px 30px 27px 0px rgb(0 0 0 / 30%);
     margin-bottom: 40px;
+    height: auto;
 
 }
 
@@ -672,6 +779,16 @@ letter-spacing: -0.38px;
 display: inline-block;
 margin-bottom: 30px;
 
+}
+.company__work-left .sub__container hr{
+    margin-top: 100px;
+}
+
+.opinion .content-inner{
+    grid-template-columns: 1fr 1fr;
+}
+.opinion .content-inner .comment{
+    margin-bottom: 30px;
 }
 
 
@@ -736,7 +853,7 @@ grid-template-columns: 1fr 1fr 1fr;
 margin-top: 125px;
 
  }   
- .team__work-right .sub__container h2{
+ .team__work-right .sub__container h2, .company__work-left .sub__container h2{
      font-size: 32px;
      line-height: 32px;
  }
@@ -771,6 +888,23 @@ line-height: 42px;
     width: 100%;
 }
 
+.opinion .content-inner{
+    grid-template-columns: 1fr;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.content-inner .comment:first-child hr,.content-inner .comment:last-child hr {
+    background: linear-gradient(90deg, #FFAC12 0%, #000000 94.96%);
+}
+.content-inner .comment:first-child .like, .content-inner .comment:last-child .like{
+    color: black;
+}
+
+
+
+.company__work-left .sub__container hr{
+    margin-top: 10px;
+}
 }
 
 
@@ -801,6 +935,10 @@ line-height: 42px;
     .big_button a{
         margin-top: 14px;
     }
+.wrap__title-left h1, .wrap__title-right .price{
+    font-size: 28px;
+    line-height: 36px;
+}
 
 }
 
